@@ -6,12 +6,12 @@ egrep (or similar) and make
 
 
 ## How to use
-To search bouth (css and javscript tags) use the command
+To search by css and javscript tags use the command
 ```
 make search
 ```
 
-If you have a more specific sarch for inline css into your css path
+If you have a more specific search for inline css into your css path
 ```
 make search-css_inline FILES=webroot/css
 ```
@@ -25,7 +25,7 @@ make search FILES="webroot/html src"
 To list internal variables use ```make debug```, that can be used with other tasks ```make debug search```
 
 ## make help
-You can aways run the ```make help``` or just ```make```
+You can run ```make help``` or just ```make``` to list available commands
 ```
 Commands available:
  make help
