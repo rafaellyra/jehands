@@ -8,9 +8,9 @@ help:
 	@echo " make help";
 	@echo " make debug";
 	@echo " make search";
-	@echo " make search-css_incorporado";
-	@echo " make search-css_inline";
-	@echo " make search-js_incorporado";
+	@echo " make search-embedded_styles";
+	@echo " make search-inline_styles";
+	@echo " make search-embedded_scripts";
 
 debug:
 	@echo "Variables:";
@@ -20,12 +20,12 @@ debug:
 search:
 	@$(GREP) '<script|<style>|style=*.' -r $(FILES);
 
-make search-embedded_css:
+search-embedded_styles:
 	@$(GREP) '<style>' -r $(FILES);
 
-search-css_inline:
+search-inline_styles:
 	@$(GREP) ' style=*.' -r $(FILES);
 
-search-embedded_js:
+search-embedded_scripts:
 	egrep '<script =*' -r $(FILES);
 

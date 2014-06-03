@@ -1,19 +1,19 @@
 # jehands
-jehands is a tool find javascript and css tags in files.
+jehands is a tool find scripts and styles tags in files.
 
 ## Dependencies
 egrep (or similar) and make
 
 
 ## How to use
-To search by css and javscript tags use the command
+To search by styles and scripts tags use the command
 ```
 make search
 ```
 
 If you have a more specific search for inline css into your css path
 ```
-make search-css_inline FILES=webroot/css
+make search-inline_styles FILES=webroot/css
 ```
 
 With your own project, you can customize to lookup a list of paths
@@ -31,7 +31,7 @@ Commands available:
  make help
  make debug
  make search
- make search-css_incorporado
- make search-css_inline
- make search-js_incorporado
+ make search-embedded_styles
+ make search-inline_styles
+ make search-embedded_scripts
 ```
