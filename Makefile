@@ -20,12 +20,12 @@ debug:
 search:
 	@$(GREP) '<script|<style>|style=*.' -r $(FILES);
 
-search-css_incorporado:
+make search-embedded_css:
 	@$(GREP) '<style>' -r $(FILES);
 
 search-css_inline:
 	@$(GREP) ' style=*.' -r $(FILES);
 
-search-js_incorporado:
+search-embedded_js:
 	@$(GREP) '<script' -r $(FILES);
 
