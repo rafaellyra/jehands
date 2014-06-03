@@ -27,5 +27,5 @@ search-css_inline:
 	@$(GREP) ' style=*.' -r $(FILES);
 
 search-embedded_js:
-	@$(GREP) '<script' -r $(FILES);
+	egrep '<script =*' -r $(FILES);
 
